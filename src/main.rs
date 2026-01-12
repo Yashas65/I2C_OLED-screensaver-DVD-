@@ -1,12 +1,9 @@
-use esp_idf_svc::hal::gpio::*;
-
 use esp_idf_svc::hal::{delay::FreeRtos, i2c::*, peripherals::Peripherals, units::FromValueType};
 use embedded_graphics::{
-    mono_font::{ascii::{FONT_6X10, FONT_10X20}, MonoTextStyle},
+    mono_font::{ascii::{FONT_10X20}, MonoTextStyle},
     pixelcolor::BinaryColor,
     prelude::*,
     text::Text,
-    primitives::{Circle, PrimitiveStyle},
 };
 
 use sh1106::{prelude::*, Builder};
