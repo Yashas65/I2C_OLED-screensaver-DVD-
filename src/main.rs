@@ -52,12 +52,12 @@ fn main() {
         if x < 0 || x > 100 {dx = -dx;}
         if y < 10 || y > 60 {dy = -dy;}
 
-        Text::new(text, Point::new(10, y), text_style)
+        Text::new(text, Point::new(x, y), text_style)
         .draw(&mut display)
         .unwrap();
         display.flush().unwrap();
         
-        Text::new("___", Point::new(10, y+2), text_style)
+        Text::new("___", Point::new(x, y+2), text_style)
         .draw(&mut display)
         .unwrap();
         display.flush().unwrap();
